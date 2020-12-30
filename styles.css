@@ -33,8 +33,11 @@ html, body {
 }
 
 .inner-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
+
+/* --------------front of card---------------------------- */
+
 
 .card-front {
   display: flex;
@@ -42,12 +45,44 @@ html, body {
 }
 
 header {
-  flex: 1;
   text-align: center;
-  font-size: 2em; 
-  margin-top: 20px;
+  font-size: 2em;
 }
 
 .form {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.word-input {
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 20%;
+  margin-right: 50px;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  height: 20px; 
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #daf5f5;
+  margin-bottom: 50px;
+  border: none;
+}
+
+button:hover {
+  background-color: #28e4eb;
 }
