@@ -1,3 +1,48 @@
 .hidden {
   display: none!important;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "papyrus", "san-serif";
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.inner-card {
+  height: 700px;
+  width: 600px;
+  background: linear-gradient(rgba(130, 196, 232, .8), rgba(19, 138, 126, 0));
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.inner-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form {
+  flex: 2;
+}
