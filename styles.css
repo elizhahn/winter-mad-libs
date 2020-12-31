@@ -75,7 +75,7 @@ h1 {
 .error-msg {
   color: #ed1118;
   font-weight: bold;
-  font-size: 1.2em; 
+  font-size: 1.2em;
 }
 
 .form {
@@ -128,4 +128,8 @@ p {
   font-size: 2em;
   text-align: center;
   padding: 0 10px;
+}
+
+.highlight {
+  text-shadow: 3px 3px 8px #07f5c1;
 }
