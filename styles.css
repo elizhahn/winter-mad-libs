@@ -74,6 +74,8 @@ h1 {
 
 .error-msg {
   color: #ed1118;
+  font-weight: bold;
+  font-size: 1.2em; 
 }
 
 .form {
