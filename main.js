@@ -46,5 +46,8 @@ function write() {
 }
 
 function makeAnother() {
+  for(var i = 0; i < 9; i++) {
+    userWords[i].value = ""; 
+  }
   flipCard();
 }
