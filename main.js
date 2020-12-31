@@ -22,6 +22,8 @@ var clothing2Text = document.querySelector("#clothing2Text");
 var beverage1Text = document.querySelector("#beverage1Text");
 var food1Text = document.querySelector("#food1Text");
 
+var errorMsg = document.querySelector(".error-msg");
+
 var userWords = [noun1, place1, num1, noun2, verb1, clothing1, clothing2, beverage1, food1];
 var blanks = [noun1Text, place1Text, num1Text, noun2Text, verb1Text, clothing1Text, clothing2Text, beverage1Text, food1Text];
 
@@ -34,9 +36,13 @@ function flipCard() {
 
 function write() {
  for(var i = 0; i < 9; i++) {
+   if(userWords[i].value === "") {
+     errorMsg.innerText = "Please fill out all fields"
+   }else {
    blanks[i].innerText = userWords[i].value
+   flipCard();
+   }
  }
- flipCard();
 }
 
 function makeAnother() {

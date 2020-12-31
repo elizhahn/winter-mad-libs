@@ -72,6 +72,10 @@ h1 {
   margin-top: 50px;
 }
 
+.error-msg {
+  color: #ed1118;
+}
+
 .form {
   flex: 1;
   display: flex;
