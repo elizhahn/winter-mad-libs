@@ -38,8 +38,8 @@ function write() {
  var validate = false;
  for(var i = 0; i < 9; i++) {
    if(!userWords[i].value) {
-     errorMsg.innerText = "Please fill out all fields"
-     validate = false; 
+     errorMsg.classList.remove("hidden");
+     validate = false;
   }else{
      blanks[i].innerText = userWords[i].value
      validate = true;
@@ -53,7 +53,7 @@ function write() {
 function makeAnother() {
   for(var i = 0; i < 9; i++) {
     userWords[i].value = "";
-    errorMsg.innerText = "";
+    errorMsg.classList.add("hidden");
   }
   flipCard();
 }
