@@ -1,8 +1,14 @@
-var button = document.querySelector("button");
+var btnWrite = document.querySelector(".btn-write");
+var btnMakeAnother = document.querySelector(".btn-make-another");
 var card = document.querySelector(".inner-card");
 
-button.addEventListener("click", flipCard);
+btnWrite.addEventListener("click", flipCard);
+btnMakeAnother.addEventListener("click", makeAnother);
 
 function flipCard() {
-  card.classList.add("flip")
+  card.classList.toggle("flip")
+}
+
+function makeAnother() {
+  flipCard();
 }
