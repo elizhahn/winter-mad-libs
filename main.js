@@ -35,19 +35,25 @@ function flipCard() {
 }
 
 function write() {
+ var validate = false;
  for(var i = 0; i < 9; i++) {
-   if(userWords[i].value === "") {
+   if(!userWords[i].value) {
      errorMsg.innerText = "Please fill out all fields"
-   }else {
-   blanks[i].innerText = userWords[i].value
-   flipCard();
+     validate = false; 
+  }else{
+     blanks[i].innerText = userWords[i].value
+     validate = true;
    }
+ }
+ if(validate) {
+   flipCard();
  }
 }
 
 function makeAnother() {
   for(var i = 0; i < 9; i++) {
-    userWords[i].value = ""; 
+    userWords[i].value = "";
+    errorMsg.innerText = "";
   }
   flipCard();
 }
